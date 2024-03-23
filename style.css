@@ -1,0 +1,219 @@
+/* Styles for Navbar */
+* {
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+}
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+}
+
+header {
+    background: url(hemp1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    color: #fff;
+    
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Styles for icons */
+.icons i {
+    color: #fff;
+    margin-right: 10px; 
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+                    
+}
+
+.icons img {
+    margin-right: 10px;
+}
+
+
+
+
+.glos{
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    font-size: 60px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+}
+
+/* Styles for Glossary Section */
+.glossary {
+    text-align: center;
+    margin: 20px;
+}
+
+
+.accordion-header {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #eaeaea;
+}
+
+.search-filter {
+    margin-top: 20px;
+}
+
+
+
+
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding: 30px;
+}
+
+.filter-alphabet,
+.filter-sort {
+    display: flex;
+    align-items: center;
+}
+
+.filter-alphabet label,
+.filter-sort label {
+    margin-right: 10px;
+    color:#862B0D ;
+    font-weight: 500;
+}
+
+.filter-options select {
+    padding: 5px;
+    font-size: 16px;
+}
+.sortFilter option{
+    color: #000;
+    font-weight: 300;
+}
+
+.accordion {
+    width: calc(50% - 20px); /* Adjust the width as needed */
+    margin-bottom: 20px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #eaeaea;
+}
+
+/* Style for the active accordion */
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header i {
+    margin-left: auto;
+    transition: transform 0.3s ease; /* Smooth transition for the plus/minus icon */
+}
+
+/* Rotate the plus icon when accordion is expanded */
+.accordion-item.active .accordion-header i {
+    transform: rotate(45deg);
+}
+
+
+
+/* Additional styling for responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+    
+    .icons i {
+        margin-right: 0; /* Remove margin for icons in mobile view */
+    }
+    
+    .nav-links {
+        flex-direction: column; /* Display nav links vertically for mobile view */
+        margin-top: 20px; /* Adjust margin for better spacing */
+    }
+    
+    .nav-links li {
+        margin-right: 0; /* Remove right margin for list items in mobile view */
+        margin-bottom: 10px; /* Add bottom margin for better spacing */
+    }
+
+    #searchContainer {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    #searchInput {
+        display: none;
+    }
+
+    #searchIcon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+}
